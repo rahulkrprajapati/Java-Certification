@@ -3,10 +3,10 @@ package StudentException;
 public class ExceptionCheck {
     String validateStudent(Student student) throws InvalidStudentException{
         try {
-            if(student.studentName == null | student.studentName.length() < 3){
+            if(student.studentName == null || student.studentName.length() < 3){
                 throw new InvalidStudentException("Student name is invalid");
             }
-            else if(student.studentID == null | student.studentID <= 100){
+            else if(student.studentID == null || student.studentID <= 100){
                 throw new InvalidStudentException("Student id invalid");
             }
             else{
