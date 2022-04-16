@@ -1,0 +1,58 @@
+ThoughtWorks Interview: 
+
+Example JSON STtructure:
+{
+    "details":[ 
+        {
+        "student_name":"SUhesna",
+        "student_email": "suhesna26@gmail.com"
+        },
+        {
+            "student_name":"Rahul",
+            "student_email": "rahul@gmail.com"
+        }
+        
+    
+    ]
+}
+# we can use pandas for csv
+
+# python library for JSON parsing
+import thoughtWorksXMLParser
+
+import java.util.Objects;
+
+import json
+# creating class ProcessFIle
+class ProcessFile():
+    # constructor to add filename as a class variable
+    def __init__(self, filename):
+        self.filename = filename
+
+        # function too process the json
+    def process_json():
+        # passing file nae to with default paramerer 'r' to open to read files
+        f = open(self.filename)
+        data = json.load(f)
+        for entry in data['details']:
+            # printing the values
+            print(entry)
+        f.close()
+
+    def parse_XML():
+        
+        f = open(self.filename)
+        # Assuming that thought works parser accepts file like Objects
+        # Assuming the library has a read FunctionalInterface
+        data = thoughtWorksXMLParser.load(f)
+        retun data
+    
+    
+    
+    if __name__ == "__main__":
+    obj = ProcessFIle("Hello.xml") 
+    data = obj.parse_XML()
+
+    obj2 = ProcessFIle("Hello.json")
+    obj.process_json()
+    
