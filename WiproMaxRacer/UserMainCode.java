@@ -39,7 +39,7 @@ public class UserMainCode {
         int [][] brr = {{1,7},{2,4},{6,9},{3,8},{5,10}};
         int [][] crr = {{1,7},{2,4},{6,9},{3,8},{5,10}};
         UserMainCode obj = new UserMainCode();
-        System.out.println(obj.maxRacers(4,brr));
+        System.out.println(obj.maxRacers(4,arr));
     }  
 
 }
